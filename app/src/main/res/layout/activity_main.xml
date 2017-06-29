@@ -6,30 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.vita.contentprovide.MainActivity">
 
-    <EditText
-        android:id="@+id/searchet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
-        android:hint="输入要查找的人的名字" />
-
-    <Button
-        android:id="@+id/searchbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/searchet"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:text="查找"
-        android:textColor="#ffffff"
-        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="100dp"
+         />
+
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="打开看图应用" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_below="@id/photo"/>
 
 </RelativeLayout>
